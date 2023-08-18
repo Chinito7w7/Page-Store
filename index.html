@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+        <header>
+			<h1>Tienda</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito"></span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+<!------------------------------------------------PLACAMADRE------------------------------------------------------->
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="/imgs/B450M-HDV R4.0(M1).png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>ASRock B450M-HDV R4.0</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="/imgs/b550.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>MSI B550 Tomahawk</h2>
+					<p class="price">$250</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="/imgs/hero.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>ASUS ROG Crosshair VIII Hero</h2>
+					<p class="price">$400</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!--------------------------------------------------PROCESADOR-------------------------------------------------------->
+			<div class="item">
+				<figure>
+					<img
+						src="/imgs/ryzen 3.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Ryzen 3 3200G</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="/imgs/Ryzen 5.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Ryzen 5 5600x</h2>
+					<p class="price">$380</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/Ryzen 9.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Ryzen 9 5950x</h2>
+					<p class="price">$670</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!------------------------------------------------------------RAM----------------------------------------------------------------------------->
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/memoria ram.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Memoria RAM 8Gb Gamer Kingston FURY 2600Mhz</h2>
+					<p class="price">$10</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/Memoria RAM Corsair Vengeance RGB PRO 2x8GB 3200Mhz.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Memoria RAM Corsair Vengeance RGB PRO 2x8GB 3200Mhz</h2>
+					<p class="price">$40</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/Memoria RAM Corsair vengeance PRO 16gb 2x8 3600Mhz.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Memoria RAM Corsair vengeance PRO 16gb 2x8 3600Mhz</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!--------------------------------------------------------------GRAFICAS--------------------------------------------------------------------------->
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/460.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>RADEON RX 560 4GB</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/1660.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>GYGABYTE Geforce GTX 1660 SUPER 8GB</h2>
+					<p class="price">$400</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/4080 super.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>VIDEO GEFORCE RTX 4080 16GB MSI</h2>
+					<p class="price">$1400</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!--------------------------------------------------------REFRIGERACION--------------------------------------------------------------------->
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/cooler_stock_amd.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>AMD Cooler stock</h2>
+					<p class="price">$0</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/cooelr 2.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Cooler Master Hyper</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/redragon watercooling.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Watercooling Cpu Redragon</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!------------------------------------------------------------ALMACENAMIENTO----------------------------------------------------------------------------------->
+                        <div class="item">
+				<figure>
+					<img
+						src="/imgs/hdd1.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Disco HDD 1TB WD blue sata</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/ssd.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Disco SSD GIGABYTE 480GB SATA</h2>
+					<p class="price">$150</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/m2.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Disco SSD M.2 KINGSTON A400 480GB</h2>
+					<p class="price">$350</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!------------------------------------------------------------FUENTES----------------------------------------------------------------------------------->
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/FUENTE 350w.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Fuente de Alimentación ATX 300W</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/fuente 600w.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Fuente 600W thermaltake smart white 80 PLUS</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/fuente 1000w.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Fuente Gigabyte 1000w 80 PLUS gold</h2>
+					<p class="price">$400</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+<!-------------------------------------------------------------GABINETES------------------------------------------------------------------------------------->
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/gabinete.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Gabinete</h2>
+					<p class="price">$10</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/gabinete 2.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Gabinete Noga ng-8608</h2>
+					<p class="price">$30</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="/imgs/gabinete 3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Gabinete Thermaltake ARGB snow white</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+		<script src="index.js"></script>
+	</body>
+</html>
